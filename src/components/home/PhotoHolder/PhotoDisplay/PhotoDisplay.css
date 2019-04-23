@@ -1,0 +1,67 @@
+.PhotoHolder {
+    text-align: center;
+}
+
+.PhotoHeader {
+    margin: 1em 0em 1em 0em;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.DisplayButton {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin-left: 2em;
+    margin-right: .5em;
+}
+
+.DisplayButton:hover {
+    background-color: var(--white) !important;
+    border-color: var(--blue) !important;
+    color: var(--blue) !important;
+}
+
+.DisplayButton:focus {
+    box-shadow: none !important;
+}
+
+.UserName {
+    text-align: left;
+    margin-left: 1em;
+    font-weight: 500;
+    background-color: var(--white);
+}
+
+.Caption {
+    text-align: left;
+    margin-left: 3em;
+    background-color: var(--white);
+}
+
+.UserButtons {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: none;
+}
+
+.row {
+    margin-top: 1em;
+    margin-bottom: 4em;
+}
+
+.card {
+    background-color: var(--white);
+}
+
+.CardHolder {
+    margin-bottom: 2em;
+}
+
+.PhotoCard {
+    height: 100%;
+}

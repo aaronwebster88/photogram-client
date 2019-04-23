@@ -1,0 +1,29 @@
+.PhotoButton {
+   display: inline-block;
+   margin-left: .5em;
+   margin-right: 2em;
+}
+
+#UploadButton {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#UploadButton:hover {
+    background-color: var(--white) !important;
+    border-color: var(--blue) !important;
+    color: var(--blue) !important;
+}
+
+#UploadButton:focus {
+    box-shadow: none !important;
+}
+
+#UploadHeader {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: var(--blue);
+}

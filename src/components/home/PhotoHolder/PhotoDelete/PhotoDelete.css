@@ -1,0 +1,17 @@
+.DeleteButton {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.DeleteButton:hover {
+    background-color: var(--white) !important;
+    border-color: #dc3545 !important;
+    color: #dc3545 !important;
+}
+
+.DeleteButton:focus {
+    box-shadow: none !important;
+}

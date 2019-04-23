@@ -1,0 +1,32 @@
+.NavAuth {
+    background-color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid lightgray;
+}
+
+.NavButton {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+.NavButton:hover {
+    background-color: var(--white) !important;
+    border-color: var(--blue) !important;
+    color: var(--blue) !important;
+}
+
+.NavButton:focus {
+    box-shadow: none !important;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--blue);
+}
+
+.navbar-light .navbar-brand:hover {
+    color: var(--blue);
+}
+
+
