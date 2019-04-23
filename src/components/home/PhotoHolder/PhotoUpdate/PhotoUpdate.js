@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Form, FormGroup, Label, Input, FormText, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './PhotoUpdate.css';
+import APIURL from '../../../../helpers/environment';
 import { AuthContext } from '../../../authorization/AuthContext';
 
 class PhotoUpdate extends Component {
@@ -34,7 +35,7 @@ class PhotoUpdate extends Component {
         formData.append('photo', update.files[0]);
         formData.append('caption', this.state.caption);
 
-        let url = "http://localhost:3000/photos/"
+        let url = `${APIURL}/photos/`
 
         fetch(url+`${this.props.photoId}`, {
             method: 'PUT',

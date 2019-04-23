@@ -3,6 +3,7 @@ import { AuthContext } from '../../../../authorization/AuthContext';
 import PhotoCreate from '../../PhotoCreate/PhotoCreate';
 import { Container, Row, Col, Card, CardHeader, CardImg, CardBody, Button } from 'reactstrap';
 import '../PhotoDisplay.css';
+import APIURL from '../../../../../helpers/environment';
 
 class AllPhotoDisplay extends Component {
     constructor(props){
@@ -14,7 +15,7 @@ class AllPhotoDisplay extends Component {
     }
 
     fetchAllPhotos = () => {
-        let url = "http://localhost:3000/photos/allphotos/";
+        let url = `${APIURL}/photos/allphotos/`;
 
         fetch(url, {
             method: 'GET',
@@ -48,7 +49,7 @@ class AllPhotoDisplay extends Component {
                                 <Col sm="8">
                                     <Card>
                                         <CardHeader className="UserName">{photos.username}</CardHeader>
-                                        <CardImg width="100%" src={`http://localhost:3000/photos/${photos.id}`} alt='' />
+                                        <CardImg width="100%" src={`${APIURL}/photos/${photos.id}`} alt='' />
                                         <CardBody className="Caption">
                                             {photos.caption}
                                         </CardBody>

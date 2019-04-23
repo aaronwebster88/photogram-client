@@ -4,6 +4,7 @@ import PhotoCreate from '../../PhotoCreate/PhotoCreate';
 import PhotoUpdate from '../../PhotoUpdate/PhotoUpdate';
 import PhotoDelete from '../../PhotoDelete/PhotoDelete';
 import '../PhotoDisplay.css';
+import APIURL from '../../../../../helpers/environment';
 import { Container, Row, Col, Button, Card, CardImg, CardBody, CardHeader, CardFooter, CardDeck, CardGroup } from 'reactstrap';
 
 class MyPhotoDisplay extends Component {
@@ -15,7 +16,7 @@ class MyPhotoDisplay extends Component {
     }
 
     fetchMyPhotos = () => {
-        let url = "http://localhost:3000/photos/myphotos/";
+        let url = `${APIURL}/photos/myphotos/`;
 
         fetch(url, {
             method: 'GET',
@@ -47,7 +48,7 @@ class MyPhotoDisplay extends Component {
                             <Col className="CardHolder" sm="4" key={photos.id}>
                                 <Card className="PhotoCard">
                                     <CardHeader className="UserName"></CardHeader>
-                                    <CardImg width="100%" src={`http://localhost:3000/photos/${photos.id}?/${Date.now()}`} alt='' />
+                                    <CardImg width="100%" src={`${APIURL}/photos/${photos.id}?/${Date.now()}`} alt='' />
                                     <CardBody className="Caption">
                                         {photos.caption}
                                     </CardBody>

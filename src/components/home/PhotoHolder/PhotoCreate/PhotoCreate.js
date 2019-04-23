@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Form, FormGroup, Label, Input, FormText, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './PhotoCreate.css';
+import APIURL from '../../../../helpers/environment';
 import { AuthContext } from '../../../authorization/AuthContext';
 
 class PhotoCreate extends Component {
@@ -35,7 +36,7 @@ class PhotoCreate extends Component {
         formData.append('photo', upload.files[0]);
         formData.append('caption', this.state.caption);
 
-        let url = "http://localhost:3000/photos/upload"
+        let url = `${APIURL}/photos/upload`
 
         fetch(url, {
             method: 'POST',

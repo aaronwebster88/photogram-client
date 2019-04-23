@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './PhotoDelete.css';
+import APIURL from '../../../../helpers/environment';
 import { AuthContext } from '../../../authorization/AuthContext';
 
 class PhotoDelete extends Component {
@@ -20,7 +21,7 @@ class PhotoDelete extends Component {
     deletePhoto = (event) =>{
         event.preventDefault();
 
-        let url = "http://localhost:3000/photos/"
+        let url = `${APIURL}/photos/`
 
         fetch(url+`${this.props.photoId}`, {
             method: 'DELETE',
