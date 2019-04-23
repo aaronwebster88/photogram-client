@@ -6,7 +6,7 @@ switch(window.location.hostname) {
         break;
 
     case 'photogram-client.herokuapp.com' : 
-        APIURL = 'https://photogram-client.herokuapp.com';
+        APIURL = 'https://photogram-db.herokuapp.com/';
         break;
 }
 
