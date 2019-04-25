@@ -1,0 +1,36 @@
+.HeaderS {
+    background-color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#NavHeaderS {
+    flex-direction: row;
+    justify-content: center space-between;
+}
+
+#NavHomeMButton {
+    background-color: var(--blue);
+    border-color: var(--white);
+    color: var(--white);
+}
+
+#NavHomeMButton:hover {
+    background-color: var(--white) !important;
+    border-color: var(--white) !important;
+    color: var(--blue) !important;
+}
+
+#NavHomeMButton:focus {
+    box-shadow: none !important;
+}
+
+#PlaceholderHeader {
+    visibility: hidden;
+}
+
+#NavbarBrandHS {
+    margin-right: 0;
+}
+
+

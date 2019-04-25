@@ -30,7 +30,7 @@ export default class Auth extends Component {
             <div>
                 <Header />
                 <NavAuth authToggle={this.authToggle} login={this.state.login} />   
-                    <Container>
+                <Container>
                     <Row>
                         <Col sm="4">
                             { !this.state.login ? <SignUp setCurrentUser={this.props.setCurrentUser} /> : <LogIn setCurrentUser={this.props.setCurrentUser} />}
@@ -39,7 +39,7 @@ export default class Auth extends Component {
                             <LandingImage />
                         </Col>
                     </Row>
-                    </Container>
+                </Container>
                 <NavAuthM authToggle={this.authToggle} login={this.state.login} />
             </div>
         )

@@ -60,25 +60,25 @@ class PhotoCreate extends Component {
     render(){
         return(
             <div className="PhotoButton">
-                <Button id="UploadButton" color="info" onClick={this.toggle} > UPLOAD PHOTO </Button>
+                <Button id="UploadButton" color="info" onClick={this.toggle} > UPLOAD </Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} >
                     <ModalHeader id="UploadHeader"toggle={this.toggle}> Upload a photo </ModalHeader>
                     <ModalBody>
                         <Form>
                             <FormGroup>
-                                <Label for="UploadFile">Upload a photo.</Label>
+                                <Label className="UploadLabel" for="UploadFile">Upload a photo.</Label>
                                 <Input type="file" name="file" id="upload" accept="photo/*"/>
                                 <FormText color="muted">
                                     100MB max. JPGs only.
                                 </FormText>
-                                <Label for="UploadCaption">Photo Caption</Label>
+                                <Label className="UploadLabel" for="UploadCaption">Add a caption.</Label>
                                 <Input type="text" name="caption" id="caption" placeholder="Write a caption..." onChange={this.handleChange} />
                             </FormGroup>
                         </Form>
                     </ModalBody>
-                    <ModalFooter>
-                        <Button color="primary" onClick={this.uploadPhoto}>UPLOAD PHOTO</Button>{' '}
-                        <Button color="secondary" onClick={this.toggle}>CANCEL</Button>
+                    <ModalFooter className="UploadFooter">
+                        <Button id="UploadSubmit" onClick={this.uploadPhoto}> UPLOAD </Button>{' '}
+                        <Button id="UploadCancel" onClick={this.toggle}>CANCEL</Button>
                     </ModalFooter>
                 </Modal>
             </div>

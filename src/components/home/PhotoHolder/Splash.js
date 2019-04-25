@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import NavHome from '../NavHome/desktop/NavHome';
+import NavHomeM from '../NavHome/mobile/NavHomeM';
+import HeaderS from '../NavHome/HeaderS';
+import './Splash.css';
 import AllPhotoDisplay from './PhotoDisplay/AllPhotos/AllPhotoDisplay';
 import MyPhotoDisplay from './PhotoDisplay/MyPhotos/MyPhotosDisplay';
+
 
 export default class Splash extends Component {
     constructor(props){
@@ -38,9 +42,11 @@ export default class Splash extends Component {
     render(){
         return(
             <div>
+                <HeaderS clickLogout={this.props.clickLogout} currentUser={this.props.currentUser} />
                 <NavHome clickLogout={this.props.clickLogout} currentUser={this.props.currentUser} />
                 <br/>
                 {this.state.display === 'AllPhotos' || this.state.display === '' ? <AllPhotoDisplay handleMyPhotos={this.handleMyPhotos} /> : <MyPhotoDisplay handleAllPhotos={this.handleAllPhotos} currentUser={this.props.currentUser} /> }
+                <NavHomeM clickLogout={this.props.clickLogout} currentUser={this.props.currentUser}   />
             </div>
         )
     }

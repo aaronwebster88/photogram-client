@@ -5,7 +5,7 @@ import PhotoUpdate from '../../PhotoUpdate/PhotoUpdate';
 import PhotoDelete from '../../PhotoDelete/PhotoDelete';
 import '../PhotoDisplay.css';
 import APIURL from '../../../../../helpers/environment';
-import { Container, Row, Col, Button, Card, CardImg, CardBody, CardHeader, CardFooter, CardDeck, CardGroup } from 'reactstrap';
+import { Container, Row, Col, Button, Card, CardImg, CardBody, CardHeader, CardFooter, } from 'reactstrap';
 
 class MyPhotoDisplay extends Component {
     constructor(props){
@@ -39,9 +39,11 @@ class MyPhotoDisplay extends Component {
     render(){
         return(
             <div className="PhotoHolder">
-                <Button className="DisplayButton" color="primary" onClick={this.props.handleAllPhotos} > ALL PHOTOS </Button>
-                <PhotoCreate mode='my' fetchMyPhotos={this.fetchMyPhotos} />
-                <h1 className="PhotoHeader">{this.props.currentUser}'s photos</h1>
+                <div className="ControlWrapper">
+                    <Button className="DisplayButton" onClick={this.props.handleAllPhotos} > PHOTOS </Button>
+                    <PhotoCreate className="CreateButton" mode='my' fetchMyPhotos={this.fetchMyPhotos} />
+                </div>
+                <h1 className="PhotoHeader">{this.props.currentUser}</h1>
                 <Container>
                     <Row>
                         {this.state.photos.map(photos => 

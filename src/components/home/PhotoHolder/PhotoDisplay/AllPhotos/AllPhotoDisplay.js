@@ -39,9 +39,11 @@ class AllPhotoDisplay extends Component {
     render(){
         return(
             <div className="PhotoHolder">
-                <Button className="DisplayButton" color="primary" onClick={this.props.handleMyPhotos} > MY PHOTOS </Button>
-                <PhotoCreate mode='all' fetchAllPhotos={this.fetchAllPhotos} />
-                <h1 className="PhotoHeader">Photos</h1>
+                <div className="ControlWrapper">
+                    <Button className="DisplayButton" onClick={this.props.handleMyPhotos} > PROFILE </Button>
+                    <PhotoCreate className="CreateButton" mode='all' fetchAllPhotos={this.fetchAllPhotos} />
+                </div>
+                <br></br>
                 <Container>
                         {this.state.photos.map(photos => 
                             <Row key={photos.id} >

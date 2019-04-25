@@ -52,12 +52,12 @@ span.input-group-text {
 input.form-control {
   background-color: var(--white);
   border-color: var(--blue);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 input.form-control::placeholder{
   color: var(--grey);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*************************************************** TABLETS *******************************************/

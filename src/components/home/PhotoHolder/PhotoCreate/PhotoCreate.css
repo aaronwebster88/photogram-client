@@ -27,3 +27,48 @@
     text-transform: uppercase;
     color: var(--blue);
 }
+
+#UploadSubmit {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#UploadSubmit:hover {
+    background-color: var(--white) !important;
+    border-color: var(--blue) !important;
+    color: var(--blue) !important;
+}
+
+#UploadSubmit:focus {
+    box-shadow: none !important;
+}
+
+#UploadCancel { 
+    background-color: var(--grey);
+    border-color: var(--grey);
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#UploadCancel:hover {
+    background-color: var(--white) !important;
+    border-color: var(--grey) !important;
+    color: var(--grey) !important;
+}
+
+#UploadCancel:focus {
+    box-shadow: none !important;
+}
+
+.UploadLabel {
+    font-family: 'Roboto', serif;
+}
+
+.UploadFooter {
+    border-top: none;
+}
+

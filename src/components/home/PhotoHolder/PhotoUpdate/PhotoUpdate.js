@@ -59,25 +59,25 @@ class PhotoUpdate extends Component {
     render(){
         return(
             <div>
-                <Button className="UpdateButton" onClick={this.toggle} > EDIT PHOTO </Button>
+                <Button className="UpdateButton" onClick={this.toggle} > EDIT </Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} >
-                    <ModalHeader toggle={this.toggle}> PhotoUpdate </ModalHeader>
+                    <ModalHeader className="UpdateHeader" toggle={this.toggle}> Edit a photo </ModalHeader>
                     <ModalBody>
                         <Form>
                             <FormGroup>
-                                <Label for="UploadFile">Upload a new photo to replace the current photo.</Label>
+                                <Label className="UpdateLabel" for="UploadFile">Upload a new photo to replace the current photo.</Label>
                                 <Input type="file" name="file" id="edit" accept="photo/*"/>
                                 <FormText color="muted">
                                     100MB max. JPGs only.
                                 </FormText>
-                                <Label for="UploadCaption">Photo Caption</Label>
+                                <Label className="UpdateLabel" for="UploadCaption">Add a new caption.</Label>
                                 <Input type="text" name="caption" id="editCaption" placeholder="Update the caption..." onChange={this.handleChange} />
                             </FormGroup>
                         </Form>
                     </ModalBody>
-                    <ModalFooter>
-                        <Button color="primary" onClick={this.updatePhoto}>UPLOAD PHOTO</Button>{' '}
-                        <Button color="secondary" onClick={this.toggle}>CANCEL</Button>
+                    <ModalFooter className="UpdateFooter">
+                        <Button className="UpdateSubmit" onClick={this.updatePhoto}> UPLOAD </Button>{' '}
+                        <Button className="UpdateCancel" onClick={this.toggle}>CANCEL</Button>
                     </ModalFooter>
                 </Modal>
             </div>

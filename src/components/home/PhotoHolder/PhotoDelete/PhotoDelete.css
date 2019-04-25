@@ -4,6 +4,7 @@
     color: var(--white);
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    margin-left: .5em;
 }
 
 .DeleteButton:hover {
@@ -14,4 +15,50 @@
 
 .DeleteButton:focus {
     box-shadow: none !important;
+}
+
+.DeleteHeader {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #dc3545;
+}
+
+.DeleteSubmit {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.DeleteSubmit:hover {
+    background-color: var(--white) !important;
+    border-color: #dc3545 !important;
+    color: #dc3545 !important;
+}
+
+.DeleteSubmit:focus {
+    box-shadow: none !important;
+}
+
+.DeleteCancel { 
+    background-color: var(--grey);
+    border-color: var(--grey);
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.DeleteCancel:hover {
+    background-color: var(--white) !important;
+    border-color: var(--grey) !important;
+    color: var(--grey) !important;
+}
+
+.DeleteCancel:focus {
+    box-shadow: none !important;
+}
+
+.DeleteFooter {
+    border-top: none;
 }

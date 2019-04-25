@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, Button } from 'reactstrap';
+import { Navbar, NavbarBrand, Button } from 'reactstrap';
 import './NavAuthM.css';
 
 export default class NavAuthM extends Component {

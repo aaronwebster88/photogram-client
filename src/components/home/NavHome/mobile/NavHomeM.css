@@ -1,0 +1,29 @@
+.NavMobileHome {
+    position: fixed;
+    left:0;
+    bottom: 0;
+    right: 0;
+}
+
+.NavHomeM {
+    background-color: var(--blue);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+}
+
+#CurrentUserM {
+    color: var(--white);
+    text-transform: initial;
+}
+
+#PlaceHolderBtn{
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+#PlaceHolderBtn:focus {
+    box-shadow: none !important;
+}

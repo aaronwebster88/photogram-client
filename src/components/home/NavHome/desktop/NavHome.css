@@ -35,5 +35,5 @@
     color: var(--blue);
     border-right: 1px solid lightgray;
     margin-right: 1em;
-    text-transform: capitalize;
+    text-transform: initial;
 }

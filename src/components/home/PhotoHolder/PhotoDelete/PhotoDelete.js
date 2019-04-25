@@ -44,15 +44,15 @@ class PhotoDelete extends Component {
     render(){
         return(
             <div>
-                <Button className="DeleteButton" onClick={this.toggle} > DELETE PHOTO </Button>
+                <Button className="DeleteButton" onClick={this.toggle} > DELETE </Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} >
-                    <ModalHeader toggle={this.toggle}> PhotoDelete </ModalHeader>
+                    <ModalHeader className="DeleteHeader" toggle={this.toggle}> Delete </ModalHeader>
                     <ModalBody>
                         Are you sure you want to delete this photo?
                     </ModalBody>
-                    <ModalFooter>
-                        <Button color="danger" onClick={this.deletePhoto}>DELETE</Button>{' '}
-                        <Button color="secondary" onClick={this.toggle}>CANCEL</Button>
+                    <ModalFooter className="DeleteFooter" >
+                        <Button className="DeleteSubmit" onClick={this.deletePhoto}>DELETE</Button>{' '}
+                        <Button className="DeleteCancel" onClick={this.toggle}>CANCEL</Button>
                     </ModalFooter>
                 </Modal>
             </div>
