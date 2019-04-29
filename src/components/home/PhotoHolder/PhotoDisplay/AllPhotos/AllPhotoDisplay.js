@@ -51,7 +51,7 @@ class AllPhotoDisplay extends Component {
                                 <Col sm="8">
                                     <Card>
                                         <CardHeader className="UserName">{photos.username}</CardHeader>
-                                        <CardImg width="100%" src={`${APIURL}/photos/${photos.id}`} alt='' />
+                                        <CardImg width="100%" src={ photos.path } alt='' />
                                         <CardBody className="Caption">
                                             {photos.caption}
                                         </CardBody>

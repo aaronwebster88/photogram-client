@@ -50,7 +50,7 @@ class MyPhotoDisplay extends Component {
                             <Col className="CardHolder" sm="4" key={photos.id}>
                                 <Card className="PhotoCard">
                                     <CardHeader className="UserName"></CardHeader>
-                                    <CardImg width="100%" src={`${APIURL}/photos/${photos.id}?/${Date.now()}`} alt='' />
+                                    <CardImg width="100%" src={ photos.path } alt='' />
                                     <CardBody className="Caption">
                                         {photos.caption}
                                     </CardBody>
